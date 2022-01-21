@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="bg.png">
+        </div>
+        <div class="contentBox">
+            <h5 class="logoText">My_Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Kim SW</h2>
+                <h4>I wish to be an AI engineer someday.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, error officia molestias ad architecto, vel recusandae rerum atque consectetur pariatur facere, nihil corrupti harum magni eum neque sunt laboriosam labore.
+                Quasi impedit eius totam possimus rerum facilis quos commodi alias praesentium ut dolore, officiis ex omnis illum est quas natus architecto explicabo. Dignissimos repellat vel ratione sint. Eligendi, rerum beatae.</p>
+                <a href="#" class="btn">About Me</a>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active')
+            sidebar.classList.toggle('active')
+            /* classList.toggle 메서드는 클래스가 존재한다면 클래스를 제거하고,
+               클래스가 존재하지 않는다면 클래스를 추가하는 메서드다.*/
+        }
+    </script>
+</body>
+</html>
