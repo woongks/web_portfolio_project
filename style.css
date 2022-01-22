@@ -54,7 +54,7 @@ section
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 110%;
     height: 100%;
     object-fit: cover;
 
@@ -64,7 +64,7 @@ section
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - 500px);
+    width: calc(97% - 500px);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -77,11 +77,11 @@ section
     position: absolute;
     top: 40px;
     left: 100px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: #333;
-    color: #fff;
+    color: #5f44aa;
     padding: 0.5px;
 }
 .banner .contentBox h4
@@ -225,65 +225,66 @@ p
 {
     background: #fff;
 }
-.about
+.say
 {
     background: #000;
      
 }
-.about .content
+.say .content
 {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
-.about .content .textBox
+.say .content .textBox
 {
     min-width: 49%;
     width: 49%;
 }
-.about .content .textBox p
+.say .content .textBox p
 {
     color: #fff;
 
 }
-.about .content .imgBox
+.say .content .imgBox
 {
     margin-left: 40px;
 }
-.about .content .imgBox img
+.say .content .imgBox img
 {
     max-width: 100%;
 }
-.services .content
+.skills .content
 {
     display:flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.services .content .servicesBox
+.skills .content .skillsBox
 {
     padding: 40px 20px;
-    max-width: 340px;
+    max-width: 400px;
     margin: 20px;
     transition: 0.5s;
     text-align: center;
     background: #d8d7d7;
 }
-.services .content .servicesBox:hover
+.skills .content .skillsBox:hover
 {
     background: #000;
 }
-.services .content .servicesBox img
+.skills .content .skillsBox img
 {
-    max-width: 80px;
+    max-width: 100px;
     transition: 0.5s;
+    filter: invert(1);
 }
-.services .content .servicesBox:hover img
+.skills .content .skillsBox:hover img
 {
-filter: invert(1);
+filter: invert(0);
 }
-.services .content .servicesBox h2
+.skills .content .skillsBox h2
 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -291,31 +292,221 @@ filter: invert(1);
     font-weight: 600;
     transition: 0.5s;
 }
-.services .content .servicesBox:hover h2
+.skills .content .skillsBox:hover h2
 {
     color: #fff;
 }
-.services .content .servicesBox p
+.skills .content .skillsBox p
 {
     margin: 0;
     transition: 0.5s;
+    font-size: 15px;
 
 }
-.services .content .servicesBox:hover p
+.skills .content .skillsBox:hover p
 {
     color: #fff;
 }
-.work .content
-{
-    width: 800px;
-    margin-left:auto;
-    margin-right:auto;
-}
-.work .content
+.me .content
 {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.me .content .meBox
+{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+.me .content .meBox .imgBox,
+.me .content .meBox .textBox
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.me .content .meBox .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.me .content .meBox .textBox
+{
+    background: #000;
+    opacity: 1;
+    transition: 0.5s;
+}
+.me .content .meBox:hover .textBox
+{
+    opacity: 0;
+}
+.me .content .meBox .textBox h3
+{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+
+}
+.contact
+{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .contactForm
+{
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+}
+.contact .contactForm .row
+{
+    width: 100%;
+    display: flex;
+}
+.contact .contactForm .row .col50
+{
+    width: 50%;
+    margin: 10px;
+}
+.contact .contactForm .row .col100
+{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.contact .contactForm .row input,
+.contact .contactForm .row textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+.contact .contactForm .row textarea
+{
+    height: 100px;
+}
+.contact .contactForm .row input[type="submit"]
+{
+    background: #5f44aa;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    max-width: 150px;
+
+}
+.copyright
+{
+    color: #fff;
+    background: #111;
+    text-align: center;
+    padding: 10px;
+}
+.copyright p
+{
+    margin: 0;
+    font-size: 16px;
+}
+#node {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px)
+{
+    .banner .imgSidebar 
+    {
+        display: none;
+    }
+    .banner .contentBox, .sidebar
+    {
+        width: 100%;
+        padding: 40px;
+    }
+    .logoText 
+    {
+        left: 40px;
+    }
+    .toggle
+    {
+        right: 40px;
+    }
+    .sci
+    {
+        left: 40px;
+    }
+    section
+    {
+        padding: 40px;
+    }
+    .say .content
+    {
+        flex-direction: column;
+    }
+    .say .content .textBox
+    {
+        min-width: 100%;
+        width: 100%;
+    }
+    .say .content 
+    {
+        margin-top: 0;
+    }
+    .say .content .imgBox
+    {
+        margin-left: 0;
+    }
+    .services .content .servicesBox 
+    {
+        margin: 5px;
+    }
+    .contact .contactForm
+    {
+        width: 100%;
+    }
+    .contactForm .row
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact .contactForm .row .col50
+    {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 500px)
+{
+    ul.sci
+    {
+        margin-left: 200px;
+        margin-bottom: 8px;
+    }
+}
