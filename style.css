@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 .toggle
 {
@@ -158,3 +159,163 @@ p
 {
     color:#5f44aa;
 }
+.sci
+{
+    position:absolute;
+    left: 100px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li
+{
+    margin-right: 10px;
+    list-style: none;
+}
+.sci li img
+{
+    transform: scale(0.5);
+    opacity: 0.7;
+    width: 50px;
+}
+#facebook {
+    width: 25px;
+    margin-right: 7px;
+}
+.sci li img:hover
+{
+    opacity: 1;
+}
+.title
+{
+    width: 100%;
+    text-align: center;
+}
+.title h2
+{
+    position: relative;
+    color: #5f44aa;
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.title p
+{
+    max-width: 700px;
+    display: inline-block;
+
+}
+.title h2::before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #000;
+}
+.title.white h2, .title.white p
+{
+    color: #fff;
+}
+.title.white h2::before
+{
+    background: #fff;
+}
+.about
+{
+    background: #000;
+     
+}
+.about .content
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.about .content .textBox
+{
+    min-width: 49%;
+    width: 49%;
+}
+.about .content .textBox p
+{
+    color: #fff;
+
+}
+.about .content .imgBox
+{
+    margin-left: 40px;
+}
+.about .content .imgBox img
+{
+    max-width: 100%;
+}
+.services .content
+{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.services .content .servicesBox
+{
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 20px;
+    transition: 0.5s;
+    text-align: center;
+    background: #d8d7d7;
+}
+.services .content .servicesBox:hover
+{
+    background: #000;
+}
+.services .content .servicesBox img
+{
+    max-width: 80px;
+    transition: 0.5s;
+}
+.services .content .servicesBox:hover img
+{
+filter: invert(1);
+}
+.services .content .servicesBox h2
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.services .content .servicesBox:hover h2
+{
+    color: #fff;
+}
+.services .content .servicesBox p
+{
+    margin: 0;
+    transition: 0.5s;
+
+}
+.services .content .servicesBox:hover p
+{
+    color: #fff;
+}
+.work .content
+{
+    width: 800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.work .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
