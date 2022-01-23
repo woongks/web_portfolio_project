@@ -64,7 +64,7 @@ section
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(97% - 500px);
+    width: calc(98% - 500px);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -109,6 +109,7 @@ p
     margin: 20px 0;
     font-weight: 300;
 }
+
 .btn
 {
     background: #5f44aa;
@@ -233,15 +234,37 @@ p
 .say .content
 {
     display: flex;
-    justify-content: space-between;
     margin-top: 40px;
+    justify-content: center;
 }
+.say h3
+{
+    font-size: 23px;
+}
+.say ol
+{
+    margin-top: 50px;
+}
+.say li
+{
+    margin: 30px 0 0 20px;
+    font-weight: 500;
+}
+
 .say .content .textBox
 {
-    min-width: 49%;
-    width: 49%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    width: 60%;
+    height: 400px;
+    background-color: #5f44aa;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 20px 23px #81519c;
 }
-.say .content .textBox p
+.say .content .textBox p,h3
 {
     color: #fff;
 
@@ -250,9 +273,11 @@ p
 {
     margin-left: 40px;
 }
-.say .content .imgBox img
+.say .content 
 {
-    max-width: 100%;
+   background-image: url(./bgg.png);
+   background-repeat: none;
+   background-size: contain;
 }
 .skills .content
 {
@@ -502,11 +527,19 @@ filter: invert(0);
     }
     
 }
-@media (max-width: 500px)
+@media (max-width: 650px)
 {
     ul.sci
     {
         margin-left: 200px;
         margin-bottom: 8px;
+    }
+    .say h3, .say p
+    {
+        font-size: 14px;
+    }
+    .say .content .textBox
+    {
+        margin-left: 0px;
     }
 }
